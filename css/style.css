@@ -1,61 +1,160 @@
-*{   
-    margin: 0;
+*{
     padding: 0;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
-    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+
 }
 
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
 
 .logo{
-    width: 40px;
-    height: auto;
-    margin: 0;
-    padding: 0;
+    width: 50px;
+    cursor: pointer;
+    margin: 20px 0;
+
 }
 
-.big-title{
-    margin: 0;
-    margin left: 1000px;
-    color: #fff;
-    font-family: cursive;
+.menu-icon img{
+    width: 30px;
+    cursor: pointer;
+    margin: 30px 0;
+
 }
 
-
-
-header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url('./images/background.jpg');
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    
-    
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
 }
 
 nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none ;
+    color: #000;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: indianred;
+}
+
+.row{
     display: flex;
-    padding: 2% 6%;
     justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2{
+    font-size: 53px;
+}
+
+.col-1 p{
+    font-size: 15px;
+    color: lightgrey;
+    font-weight: 100;
+}
+
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, orangered, palevioletred);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+button img{
+    width: 28px;
+    display: none;
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background:linear-gradient(royalblue, orangered, yellow);
+    position: absolute; 
+    left: -40px;
+    top: 8px;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
     align-items: center;
 }
 
-.nav-links{
-    flex: 1;
-    text-align: right;
-
+.col-2 .cube{
+    width: 65%;
 }
 
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(royalblue, yellow);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(125px);
 }
 
-.nav-links ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
 
-}
+/*PART MU BAWAH SINI PIK*/
+
