@@ -66,10 +66,5 @@ body{
 }
 
 @media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
+	background: linear-gradient(grey,white);
     }
-    .inner-container{
-        padding: 60px;
-    }
-}
